@@ -45,7 +45,7 @@ class _ProfileState extends State<Profile> {
                         },
                       ),
                       const SizedBox(
-                        width: 80,
+                        width: 90,
                       ),
                       const Text(
                         "PROFILE",
@@ -55,7 +55,7 @@ class _ProfileState extends State<Profile> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(width: 120),
+                      const SizedBox(width: 110),
                     const ImageIcon(
                         AssetImage("assets/icon.png"),
                         color: Colors.white,
