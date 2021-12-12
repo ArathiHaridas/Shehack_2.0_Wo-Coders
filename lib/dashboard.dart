@@ -15,7 +15,6 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      //padding: EdgeInsets.fromLTRB(20, 0,20, 20),
       child: Column(
         children: <Widget>[
           Stack(children: <Widget>[
@@ -30,20 +29,21 @@ class _DashboardState extends State<Dashboard> {
                     bottomLeft: Radius.circular(50.0)),
                 color: Color(0xff0243d0),
               ),
-              padding: const EdgeInsets.fromLTRB(10, 60, 0, 0),
+              padding: const EdgeInsets.fromLTRB(10, 70, 0, 0),
               child: Column(
                 children: [
                   Row(
                     children: [
                       IconButton(
-                        iconSize: 30.0,
-                        icon: const Icon(Icons.menu),
+                        icon: Image.asset('assets/left.png'),
                         color: Colors.white,
+                        iconSize: 15,
                         onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (_) => Profile()));
+                           Navigator.push(context,
+                              MaterialPageRoute(builder: (_) => const Profile()));
                         },
                       ),
+                      const SizedBox(width: 10),
                       const Text(
                         "DASHBOARD",
                         style: TextStyle(
@@ -52,7 +52,7 @@ class _DashboardState extends State<Dashboard> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      const SizedBox(width: 140),
+                      const SizedBox(width: 130),
                       IconButton(
                         iconSize: 30.0,
                         icon: const Icon(Icons.notifications_on_outlined),
@@ -273,7 +273,6 @@ class _DashboardState extends State<Dashboard> {
                     ),
                   ),
                 ),
-                //SizedBox(wi),
                 Expanded(
                   child: Container(
                     margin: const EdgeInsets.fromLTRB(20, 510, 20, 0),

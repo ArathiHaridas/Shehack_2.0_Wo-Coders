@@ -71,6 +71,10 @@ flutter:
       - assets/al.jpg
       - assets/ach.jpg
       - assets/ath.jpg
+      - assets/icon.png
+      - assets/left.png
+      
+
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
