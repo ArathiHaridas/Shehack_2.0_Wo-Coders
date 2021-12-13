@@ -510,9 +510,9 @@ class _DashboardState extends State<Dashboard> {
                     ),
                     const SizedBox(width: 7),
                     Container(
-                      //color: Colors.orange,
+                     
                       height: MediaQuery.of(context).size.height * 0.07,
-                      // width: MediaQuery.of(context).size.width * 100,
+                     
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20.0),
