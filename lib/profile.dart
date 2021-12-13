@@ -30,7 +30,7 @@ class _ProfileState extends State<Profile> {
                     bottomLeft: Radius.circular(50.0)),
                 color: Color(0xff0243d0),
               ),
-              padding: const EdgeInsets.fromLTRB(10, 60, 0, 0),
+              padding: const EdgeInsets.fromLTRB(10, 70, 0, 0),
               child: Column(
                 children: [
                   Row(
