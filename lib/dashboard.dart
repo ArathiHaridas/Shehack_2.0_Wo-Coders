@@ -118,211 +118,227 @@ class _DashboardState extends State<Dashboard> {
             Row(
               children: [
                 Expanded(
-                  child: Container(
-                    margin: const EdgeInsets.fromLTRB(20, 350, 20, 0),
-                    height: MediaQuery.of(context).size.height * 0.17,
-                    // width: MediaQuery.of(context).size.width * 100,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20.0),
-                        // ignore: prefer_const_literals_to_create_immutables
-                        boxShadow: [
-                          const BoxShadow(
-                              blurRadius: 2.0, color: Color(0xFFCFCCC4)),
-                        ]),
-                    child: Column(
-                      //crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Stack(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
-                              child: CircleAvatar(
-                                  radius: 29,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    child: Image.asset(
-                                      "assets/syllabus.jpg",
-                                      height: 45,
+                  child: 
+                  GestureDetector(
+                    onTap: (){},
+                    child: Container(
+                      margin: const EdgeInsets.fromLTRB(20, 350, 20, 0),
+                      height: MediaQuery.of(context).size.height * 0.17,
+                      // width: MediaQuery.of(context).size.width * 100,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20.0),
+                          // ignore: prefer_const_literals_to_create_immutables
+                          boxShadow: [
+                            const BoxShadow(
+                                blurRadius: 2.0, color: Color(0xFFCFCCC4)),
+                          ]),
+                      child: Column(
+                        //crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
+                                child: CircleAvatar(
+                                    radius: 29,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(50),
+                                      child: Image.asset(
+                                        "assets/syllabus.jpg",
+                                        height: 45,
+                                      ),
                                     ),
+                                    backgroundColor: const Color(0xffdce0eb)),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(0, 95, 0, 0),
+                                child: const Text(
+                                  "Syllabus",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                    //fontWeight: FontWeight.w500,
                                   ),
-                                  backgroundColor: const Color(0xffdce0eb)),
-                            ),
-                            Container(
-                              padding: const EdgeInsets.fromLTRB(0, 95, 0, 0),
-                              child: const Text(
-                                "Syllabus",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 18,
-                                  //fontWeight: FontWeight.w500,
                                 ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ],
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 //SizedBox(wi),
                 Expanded(
-                  child: Container(
-                    margin: const EdgeInsets.fromLTRB(20, 350, 20, 0),
-                    height: MediaQuery.of(context).size.height * 0.17,
-                    // width: MediaQuery.of(context).size.width * 100,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20.0),
-                        // ignore: prefer_const_literals_to_create_immutables
-                        boxShadow: [
-                          const BoxShadow(
-                              blurRadius: 2.0, color: Color(0xFFCFCCC4)),
-                        ]),
-                    child: Column(
-                      //crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Stack(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.fromLTRB(20, 30, 0, 0),
-                              child: CircleAvatar(
-                                  radius: 29,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    child: Image.asset(
-                                      "assets/attendence.jpg",
-                                      height: 45,
-                                      //color: Colors.blue,
+                  child:
+                   GestureDetector(
+                     onTap: (){},
+                     child: Container(
+                      margin: const EdgeInsets.fromLTRB(20, 350, 20, 0),
+                      height: MediaQuery.of(context).size.height * 0.17,
+                      // width: MediaQuery.of(context).size.width * 100,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20.0),
+                          // ignore: prefer_const_literals_to_create_immutables
+                          boxShadow: [
+                            const BoxShadow(
+                                blurRadius: 2.0, color: Color(0xFFCFCCC4)),
+                          ]),
+                      child: Column(
+                        //crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(20, 30, 0, 0),
+                                child: CircleAvatar(
+                                    radius: 29,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(50),
+                                      child: Image.asset(
+                                        "assets/attendence.jpg",
+                                        height: 45,
+                                        //color: Colors.blue,
+                                      ),
                                     ),
+                                    backgroundColor: const Color(0xffdce0eb)
+                   
+                                    //backgroundColor:  Color(0xffFDCF09),
+                                    ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(10, 95, 0, 0),
+                                child: const Text(
+                                  "Attendence",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                    //fontWeight: FontWeight.w500,
                                   ),
-                                  backgroundColor: const Color(0xffdce0eb)
-
-                                  //backgroundColor:  Color(0xffFDCF09),
-                                  ),
-                            ),
-                            Container(
-                              padding: const EdgeInsets.fromLTRB(10, 95, 0, 0),
-                              child: const Text(
-                                "Attendence",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 18,
-                                  //fontWeight: FontWeight.w500,
                                 ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
+                            ],
+                          ),
+                        ],
+                      ),
+                                     ),
+                   ),
                 ),
               ],
             ),
             Row(
               children: [
                 Expanded(
-                  child: Container(
-                    margin: const EdgeInsets.fromLTRB(20, 510, 20, 0),
-                    height: MediaQuery.of(context).size.height * 0.17,
-                    // width: MediaQuery.of(context).size.width * 100,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20.0),
-                        // ignore: prefer_const_literals_to_create_immutables
-                        boxShadow: [
-                          const BoxShadow(
-                              blurRadius: 2.0, color: Color(0xFFCFCCC4)),
-                        ]),
-                    child: Column(
-                      //crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Stack(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.fromLTRB(15, 30, 0, 0),
-                              child: CircleAvatar(
-                                  radius: 29,
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(50),
-                                    child: Image.asset(
-                                      "assets/hw.jpg",
-                                      height: 45,
+                  child: 
+                  GestureDetector(
+                    onTap: (){},
+                    child: Container(
+                      margin: const EdgeInsets.fromLTRB(20, 510, 20, 0),
+                      height: MediaQuery.of(context).size.height * 0.17,
+                      // width: MediaQuery.of(context).size.width * 100,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20.0),
+                          // ignore: prefer_const_literals_to_create_immutables
+                          boxShadow: [
+                            const BoxShadow(
+                                blurRadius: 2.0, color: Color(0xFFCFCCC4)),
+                          ]),
+                      child: Column(
+                        //crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(15, 30, 0, 0),
+                                child: CircleAvatar(
+                                    radius: 29,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(50),
+                                      child: Image.asset(
+                                        "assets/hw.jpg",
+                                        height: 45,
+                                      ),
                                     ),
+                                    backgroundColor: const Color(0xffdce0eb)
+                  
+                                    //backgroundColor:  Color(0xffFDCF09),
+                                    ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(0, 95, 0, 0),
+                                child: const Text(
+                                  "Home Work",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                    //fontWeight: FontWeight.w500,
                                   ),
-                                  backgroundColor: const Color(0xffdce0eb)
-
-                                  //backgroundColor:  Color(0xffFDCF09),
-                                  ),
-                            ),
-                            Container(
-                              padding: const EdgeInsets.fromLTRB(0, 95, 0, 0),
-                              child: const Text(
-                                "Home Work",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 18,
-                                  //fontWeight: FontWeight.w500,
                                 ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ],
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 Expanded(
-                  child: Container(
-                    margin: const EdgeInsets.fromLTRB(20, 510, 20, 0),
-                    height: MediaQuery.of(context).size.height * 0.17,
-                    // width: MediaQuery.of(context).size.width * 100,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20.0),
-                        // ignore: prefer_const_literals_to_create_immutables
-                        boxShadow: [
-                          const BoxShadow(
-                              blurRadius: 2.0, color: Color(0xFFCFCCC4)),
-                        ]),
-                    child: Column(
-                      //crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Stack(
-                          children: [
-                            Container(
-                              padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
-                              child: CircleAvatar(
-                                radius: 29,
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(50),
-                                  child: Image.asset(
-                                    "assets/result.jpg",
-                                    height: 45,
+                  child:
+                   GestureDetector(
+                     onTap: (){},
+                     child: Container(
+                      margin: const EdgeInsets.fromLTRB(20, 510, 20, 0),
+                      height: MediaQuery.of(context).size.height * 0.17,
+                      // width: MediaQuery.of(context).size.width * 100,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20.0),
+                          // ignore: prefer_const_literals_to_create_immutables
+                          boxShadow: [
+                            const BoxShadow(
+                                blurRadius: 2.0, color: Color(0xFFCFCCC4)),
+                          ]),
+                      child: Column(
+                        //crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Stack(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
+                                child: CircleAvatar(
+                                  radius: 29,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(50),
+                                    child: Image.asset(
+                                      "assets/result.jpg",
+                                      height: 45,
+                                    ),
+                                  ),
+                   
+                                  backgroundColor: const Color(0xffdce0eb),
+                                  //backgroundColor:  Color(0xffFDCF09),
+                                ),
+                              ),
+                              Container(
+                                padding: const EdgeInsets.fromLTRB(5, 95, 0, 0),
+                                child: const Text(
+                                  "Result",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                    //fontWeight: FontWeight.w500,
                                   ),
                                 ),
-
-                                backgroundColor: const Color(0xffdce0eb),
-                                //backgroundColor:  Color(0xffFDCF09),
                               ),
-                            ),
-                            Container(
-                              padding: const EdgeInsets.fromLTRB(5, 95, 0, 0),
-                              child: const Text(
-                                "Result",
-                                style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 18,
-                                  //fontWeight: FontWeight.w500,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
+                            ],
+                          ),
+                        ],
+                      ),
+                                     ),
+                   ),
                 ),
               ],
             )
